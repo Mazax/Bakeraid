@@ -15,7 +15,7 @@ end
                  
 function love.draw()
  
-    BG = love.graphics.newImage("BG_placeholder.PNG")
+    BG = love.graphics.newImage("assets/BG_placeholder.PNG")
     love.graphics.draw(BG, 30, 0)
  
     loveframes.draw()
@@ -24,7 +24,7 @@ end
  
 function love.mousepressed(x, y, button)
  
-    -- your code
+    -- your code<
  
     loveframes.mousepressed(x, y, button)
  
