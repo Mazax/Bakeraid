@@ -1,7 +1,16 @@
 
 function love.load()
-
+    minIngrAmount = 0;
+    maxIngrAmount = 3;
+    
     loveframes = require("libraries.loveframes")
+    require("ui_ingredient")
+    require("ui_sign")
+    require("ui_viking")
+
+    require("ui_main")
+
+    BG = love.graphics.newImage("assets/BG_v02.PNG")
 
 end
 
@@ -14,9 +23,8 @@ function love.update(dt)
 end
                  
 function love.draw()
- 
-    BG = love.graphics.newImage("assets/BG_placeholder.PNG")
-    love.graphics.draw(BG, 30, 0)
+
+    love.graphics.draw(BG, 0, 0)
  
     loveframes.draw()
  
