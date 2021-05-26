@@ -12,7 +12,7 @@ function love.load()
 
     require("viking_creation")
 
-    // test viking creation
+    --test viking creation
     local viking = createViking(1,3,3,1)
     print(viking.type)
 
