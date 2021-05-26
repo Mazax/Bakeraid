@@ -9,15 +9,15 @@ function container(x,y)
 end
 
 
-ui_ingredient1 = ui_ingredient(120, 55)
-ui_ingredient2 = ui_ingredient(250, 55)
-ui_ingredient3 = ui_ingredient(380, 55)
-ui_ingredient4 = ui_ingredient(120, 210)
-ui_ingredient5 = ui_ingredient(250, 210)
+ui_ingredient1 = ui_ingredient(120, 55, 1)
+ui_ingredient2 = ui_ingredient(250, 55, 2)
+ui_ingredient3 = ui_ingredient(380, 55, 3)
+ui_ingredient4 = ui_ingredient(120, 210, 4)
+ui_ingredient5 = ui_ingredient(250, 210, 5)
 --ui_ingredient6 = ui_ingredient(380, 210)
 
 
-local ui_ingredient0 = ui_ingredient(50,540)
+local ui_ingredient0 = ui_ingredient(50,540, 0)
 ui_ingredient0:SetSize(160,160)
 
 for k, child in pairs(ui_ingredient0:GetChildren()) do
