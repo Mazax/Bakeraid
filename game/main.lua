@@ -20,7 +20,7 @@ function love.load()
     music:setVolume(0.6)
     music:play()
 
-    BG = love.graphics.newImage("assets/BG_v02.PNG")
+    BG = love.graphics.newImage("assets/BG_v02.png")
 
 end
 

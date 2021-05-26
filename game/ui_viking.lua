@@ -1,7 +1,7 @@
 
 local function Viking(container, version)
     local viking = loveframes.Create("image")
-    viking:SetImage(string.format("assets/characters/viikinki%s.PNG", version))
+    viking:SetImage(string.format("assets/characters/viikinki%s.png", version))
     viking:SetParent(container)
     local viking_offset = -viking:GetImageHeight() + 40
     viking:SetPos(0, viking_offset)
@@ -12,7 +12,7 @@ end
 local function GetWeaponPath(name, version)
     name = name or "miekka"
     version = version or 1
-    return string.format("assets/weapons/%s%s.PNG", name, version)
+    return string.format("assets/weapons/%s%s.png", name, version)
 end
 
 
