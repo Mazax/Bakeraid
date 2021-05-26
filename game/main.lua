@@ -11,9 +11,8 @@ function love.load()
     require("ui_main")
 
     music = love.audio.newSource("assets/audio/VIKINKI2_V2.mp3", "stream")
-
     music:setVolume(0.6)
-    --music:play()
+    music:play()
 
     BG = love.graphics.newImage("assets/BG_v02.PNG")
 
@@ -24,6 +23,7 @@ function love.update(dt)
     -- your code
  
     loveframes.update(dt)
+    
 
     if not music:isPlaying() then
 		love.audio.play(music)
