@@ -10,6 +10,12 @@ function love.load()
 
     require("ui_main")
 
+    require("viking_creation")
+
+    // test viking creation
+    local viking = createViking(1,3,3,1)
+    print(viking.type)
+
     music = love.audio.newSource("assets/audio/VIKINKI2_V2.mp3", "stream")
 
     music:setVolume(0.6)
