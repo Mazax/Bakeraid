@@ -4,20 +4,23 @@ function love.load()
     maxIngrAmount = 3;
     
     loveframes = require("libraries.loveframes")
-    require("ui_ingredient")
-    require("ui_sign")
-    require("ui_viking")
-
-    require("ui_main")
 
     require("viking_creation")
+    require("ui_ingredient")
+    require("ui_mixer")
+    require("ui_sign")
+    require("ui_viking")
+    require("ui_main")
+
+    require("mixer")
+    
 
     --test viking creation
-    local viking = createViking(1,3,3,1)
-    print(viking.type)
+    --local viking = createViking(1,3,3,1)
+    --print(viking.type)
 
     music = love.audio.newSource("assets/audio/VIKINKI2_V2.mp3", "stream")
-    music:setVolume(0.6)
+    music:setVolume(0.2)
     music:play()
 
     BG = love.graphics.newImage("assets/BG_v02.png")

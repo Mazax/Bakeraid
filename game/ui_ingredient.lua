@@ -78,7 +78,7 @@ function ui_ingredient(x,y, type)
     numberbox.OnValueChanged = function(object, value)
         sound:seek(0)
         sound:play()
-        UpdateMixer()
+        UpdateMixerUIValues()
     end
 
 
